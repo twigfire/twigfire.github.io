@@ -7,47 +7,30 @@
   <meta name="description" content="Drafting and Residential Construction Design — Zach Liscio" />
   <link rel="stylesheet" href="styles.css" />
   <style>
-    /* Center the brand and make the logo match the title width */
     .brand {
       display: flex;
       justify-content: center;
     }
-
     .brand-content {
-      display: inline-flex;
+      display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: center;    /* this does the horizontal centering */
       width: max-content;
+      max-width: 100%;
     }
-
     .logo {
-      width: 100%; /* fills the brand-content width (so it matches the title's width) */
+      width: 100%;
       height: auto;
+      max-width: 280px;       /* optional: prevent it from getting huge */
       display: block;
     }
-
-    .title {
+    .title, .role, .phone, .contact {
       margin: 0.35rem 0 0;
       text-align: center;
     }
-
-    .role {
-      margin: 0.15rem 0 0;
-      text-align: center;
-    }
-
-    .contact {
-      text-align: center;
-      margin-top: .15rem;
-      
-    .phone {
-      text-align: center;
-      margin-top: .15rem;
-    }
-
-    .email {
-      word-break: break-all;
-    }
+    .role { margin-top: 0.15rem; }
+    .contact { margin-top: 1rem; }
+    .email { word-break: break-all; }
   </style>
 </head>
 <body>
@@ -55,12 +38,21 @@
     <div class="card">
       <header class="brand">
         <div class="brand-content">
-        <div class="logo-wrapper">
-          <img src="logo.png" alt="Zach Liscio logo" class="logo" /> 
+
+          <img src="logo.png" alt="Zach Liscio logo" class="logo" />
+
+          <h1 class="title">Zach Liscio</h1>
+
           <p class="role">Building Design & Drafting Services</p>
-          <p class="role">Zach Liscio    -    Juneau, Alaska</p>
-          <a href="tel:+19071234567" class="phone">907 409 6607</a>
-          <p class="contact"><a href="mailto:design@twigfire.com" class="email">design@twigfire.com</a></p>
+          <p class="role">Juneau, Alaska</p>
+
+          <a href="tel:+19074096607" class="phone">907 409 6607</a>
+
+          <p class="contact">
+            <a href="mailto:design@twigfire.com" class="email">design@twigfire.com</a>
+          </p>
+
+        </div>
       </header>
     </div>
   </main>
