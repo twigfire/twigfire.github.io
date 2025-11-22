@@ -19,12 +19,20 @@
       align-items: center;
       width: -moz-fit-content;
       width: fit-content;
+
+      /* Make the logo size tie to the text size below.
+         Changing the font-size here will scale the logo height accordingly. */
+      font-size: 1rem;
+      line-height: 1;
     }
 
+    /* Make the logo the same height as the text (1em),
+       keep aspect ratio with width:auto. Remove the previous 100% fill. */
     .logo {
-      width: 100%; /* fills the brand-content width (so it matches the title's width) */
-      height: auto;
+      height: 1em; /* same as the text height in .brand-content */
+      width: auto;
       display: block;
+      margin-bottom: 0.15rem; /* small gap between image and the role text */
     }
 
     .title {
@@ -37,13 +45,15 @@
       text-align: center;
     }
 
+    /* Remove the extra space above the email */
     .contact {
       text-align: center;
-      margin-top: 1rem;
+      margin-top: 0;
     }
 
     .email {
       word-break: break-all;
+      margin: 0;
     }
   </style>
 </head>
