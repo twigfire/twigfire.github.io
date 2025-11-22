@@ -84,6 +84,11 @@ html,body{
   text-decoration:none;
 }
 
+.phone{
+  color:var(--accent);
+  text-decoration:none;
+}
+
 .email:hover{ text-decoration:underline; }
 
 .small{
