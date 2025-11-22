@@ -85,7 +85,7 @@ html,body{
 }
 
 .phone{
-  color:var(--accent);
+  color: #222;
   text-decoration:none;
 }
 
