@@ -5,60 +5,60 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Zach Liscio — twigfire.com</title>
   <meta name="description" content="Drafting and Residential Construction Design — Zach Liscio" />
-
+  <link rel="stylesheet" href="styles.css" />
   <style>
-    /* Center the brand container */
+    /* Center the brand and make the logo match the title width */
     .brand {
       display: flex;
       justify-content: center;
     }
 
-    /* The width of this container determines the width of both the text AND the logo */
     .brand-content {
-      display: flex;
+      display: inline-flex;
       flex-direction: column;
       align-items: center;
-      text-align: center;
-      width: max-content; /* sets width based on the text below */
+      width: -moz-fit-content;
+      width: fit-content;
     }
 
     .logo {
-      width: 100%;
+      width: 100%; /* fills the brand-content width (so it matches the title's width) */
       height: auto;
       display: block;
     }
 
+    .title {
+      margin: 0.35rem 0 0;
+      text-align: center;
+    }
+
     .role {
-      margin: 0.3rem 0 0;
+      margin: 0.15rem 0 0;
+      text-align: center;
     }
 
     .contact {
       text-align: center;
-      margin-top: 0.5rem; /* reduced space above email */
+      margin-top: 1rem;
     }
 
     .email {
       word-break: break-all;
-      margin: 0;
-      padding: 0;
     }
   </style>
 </head>
-
 <body>
   <main class="container">
     <div class="card">
       <header class="brand">
         <div class="brand-content">
-          <img src="logo.png" alt="Zach Liscio logo" class="logo" />
+          <img src="logo.png" alt="Zach Liscio logo" class="logo" /> 
           <p class="role">Drafting and Residential Construction Design</p>
-          <p class="role">Zach Liscio — Juneau, Alaska</p>
+          <p class="role">Zach Liscio    -    Juneau, Alaska</p>
         </div>
       </header>
+      <p class="contact"><a href="mailto:design@twigfire.com" class="email">design@twigfire.com</a></p>
 
-      <p class="contact">
-        <a href="mailto:design@twigfire.com" class="email">design@twigfire.com</a>
-      </p>
     </div>
   </main>
 </body>
