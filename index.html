@@ -1,116 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Zach Liscio — twigfire.com</title>
-  <meta name="description" content="Drafting and Residential Construction Design — Zach Liscio">
-
-  <!-- Prevent caching problems while developing -->
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-  <meta http-equiv="Pragma" content="no-cache">
-  <meta http-equiv="Expires" content="0">
-
-  <link rel="stylesheet" href="styles.css">
-
+  <meta name="description" content="Drafting and Residential Construction Design — Zach Liscio" />
+  <link rel="stylesheet" href="styles.css" />
   <style>
-    :root {
-      --max-width: 420px;
-    }
-
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, sans-serif;
-      background: #f9f9f9;
-      color: #222;
-      min-height: 100dvh;
-      display: grid;
-      place-items: center;
-    }
-
-    .container {
-      width: min(100% - 2rem, var(--max-width));
-    }
-
-    .card {
-      background: white;
-      padding: 2.5rem 2rem;
-      border-radius: 1rem;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-      text-align: center;
+    /* Center the brand and make the logo match the title width */
+    .brand {
+      display: flex;
+      justify-content: center;
     }
 
     .brand-content {
-      display: flex;
+      display: inline-flex;
       flex-direction: column;
       align-items: center;
-      width: fit-content;           /* modern replacement for -moz-fit-content */
-      margin: 0 auto;
+      width: -moz-fit-content;
+      width: fit-content;
     }
 
     .logo {
-      width: 100%;                  /* forces logo to match the width of the text block below */
+      width: 100%; /* fills the brand-content width (so it matches the title's width) */
       height: auto;
       display: block;
-      max-width: 300px;             /* optional: keeps it from getting huge on big screens */
     }
 
     .title {
-      margin: 0.6rem 0 0;
-      font-size: 1.75rem;
-      font-weight: 600;
-      line-height: 1.2;
+      margin: 0.35rem 0 0;
+      text-align: center;
     }
 
     .role {
-      margin: 0.35rem 0 0;
-      font-size: 1.1rem;
-      color: #444;
-    }
-
-    /* Remove space between last role line and email */
-    .role:last-of-type {
-      margin-bottom: 0;
+      margin: 0.15rem 0 0;
+      text-align: center;
     }
 
     .contact {
-      margin: 0.6rem 0 0;           /* tiny controlled gap — change to 0 for absolutely zero space */
-      font-size: 1.25rem;
+      text-align: center;
+      margin-top: 1rem;
     }
 
     .email {
-      color: #0066cc;
-      text-decoration: none;
       word-break: break-all;
-    }
-    .email:hover {
-      text-decoration: underline;
-    }
-
-    /* Optional dark mode */
-    @media (prefers-color-scheme: dark) {
-      body { background: #111; color: #eee; }
-      .card { background: #1a1a1a; }
-      .role { color: #bbb; }
-      .email { color: #4da6ff; }
     }
   </style>
 </head>
-
 <body>
   <main class="container">
-    <article class="card">
-      <header class="brand-content">
-        <img src="logo.png" alt="Zach Liscio logo" class="logo">
-        <h1 class="title">Zach Liscio</h1>
-        <p class="role">Drafting and Residential Construction Design</p>
-        <p class="role">Juneau, Alaska</p>
+    <div class="card">
+      <header class="brand">
+        <div class="brand-content">
+          <img src="logo.png" alt="Zach Liscio logo" class="logo" /> 
+          <p class="role">Drafting and Residential Construction Design</p>
+          <p class="role">Zach Liscio    -    Juneau, Alaska</p>
+        </div>
       </header>
+      <p class="contact"><a href="mailto:design@twigfire.com" class="email">design@twigfire.com</a></p>
 
-      <p class="contact">
-        <a href="mailto:design@twigfire.com" class="email">design@twigfire.com</a>
-      </p>
-    </article>
+    </div>
   </main>
 </body>
 </html>
