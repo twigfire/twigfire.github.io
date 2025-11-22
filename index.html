@@ -5,70 +5,60 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Zach Liscio — twigfire.com</title>
   <meta name="description" content="Drafting and Residential Construction Design — Zach Liscio" />
-  <link rel="stylesheet" href="styles.css" />
+
   <style>
-    /* Center the brand and make the logo match the title width */
+    /* Center the brand container */
     .brand {
       display: flex;
       justify-content: center;
     }
 
+    /* The width of this container determines the width of both the text AND the logo */
     .brand-content {
-      display: inline-flex;
+      display: flex;
       flex-direction: column;
       align-items: center;
-      width: -moz-fit-content;
-      width: fit-content;
-
-      /* Make the logo size tie to the text size below.
-         Changing the font-size here will scale the logo height accordingly. */
-      font-size: 1rem;
-      line-height: 1;
-    }
-
-    /* Make the logo the same height as the text (1em),
-       keep aspect ratio with width:auto. Remove the previous 100% fill. */
-    .logo {
-      height: 1em; /* same as the text height in .brand-content */
-      width: auto;
-      display: block;
-      margin-bottom: 0.15rem; /* small gap between image and the role text */
-    }
-
-    .title {
-      margin: 0.35rem 0 0;
       text-align: center;
+      width: max-content; /* sets width based on the text below */
+    }
+
+    .logo {
+      width: 100%;
+      height: auto;
+      display: block;
     }
 
     .role {
-      margin: 0.15rem 0 0;
-      text-align: center;
+      margin: 0.3rem 0 0;
     }
 
-    /* Remove the extra space above the email */
     .contact {
       text-align: center;
-      margin-top: 0;
+      margin-top: 0.5rem; /* reduced space above email */
     }
 
     .email {
       word-break: break-all;
       margin: 0;
+      padding: 0;
     }
   </style>
 </head>
+
 <body>
   <main class="container">
     <div class="card">
       <header class="brand">
         <div class="brand-content">
-          <img src="logo.png" alt="Zach Liscio logo" class="logo" /> 
+          <img src="logo.png" alt="Zach Liscio logo" class="logo" />
           <p class="role">Drafting and Residential Construction Design</p>
-          <p class="role">Zach Liscio    -    Juneau, Alaska</p>
+          <p class="role">Zach Liscio — Juneau, Alaska</p>
         </div>
       </header>
-      <p class="contact"><a href="mailto:design@twigfire.com" class="email">design@twigfire.com</a></p>
 
+      <p class="contact">
+        <a href="mailto:design@twigfire.com" class="email">design@twigfire.com</a>
+      </p>
     </div>
   </main>
 </body>
